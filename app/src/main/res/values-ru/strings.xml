@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MXConverter</string>
+    <string name="dofrom">Пересчет из</string>
+    <string name="doto">Посчитать в</string>
+    <string name="updated">Данные на:</string>
+    <string name="docount">СЧИТАТЬ</string>
+    <string name="entersumm">Введите сумму</string>
+</resources>
