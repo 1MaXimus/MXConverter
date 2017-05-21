@@ -1,0 +1,7 @@
+<application>
+  <component name="FileTypeManager" version="16">
+    <extensionMap>
+      <mapping pattern="ab_vid" type="Android Nine-Patch" />
+    </extensionMap>
+  </component>
+</application>

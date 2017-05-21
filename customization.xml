@@ -1,0 +1,17 @@
+<application>
+  <component name="com.intellij.ide.ui.customization.CustomActionsSchema">
+    <group value="Find" is_action="true" action_type="-1" position="1">
+      <path value="root" />
+      <path value="Main Toolbar" />
+      <path value="Toolbar Find Actions" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <group value="ReplaceInPath" is_action="true" action_type="1" position="2">
+      <path value="root" />
+      <path value="Main Toolbar" />
+      <path value="Toolbar Find Actions" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <action id="ReplaceInPath" icon="$USER_HOME$/Pictures/ic_menu_find_holo_light.png" />
+  </component>
+</application>

@@ -1,0 +1,5 @@
+<application>
+  <component name="IntentionManagerSettings">
+    <ignoreAction name="XML/Choose Color" />
+  </component>
+</application>
