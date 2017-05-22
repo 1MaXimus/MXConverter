@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MXConverter</string>
+    <string name="dofrom">Count from</string>
+    <string name="doto">Count to</string>
+    <string name="updated">Data for:</string>
+    <string name="docount">COUNT</string>
+    <string name="entersumm">Enter amount</string>
+</resources>
