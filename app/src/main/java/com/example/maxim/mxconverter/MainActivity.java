@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Xml;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -13,6 +14,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
 import java.io.File;
@@ -53,7 +55,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         rescode = (TextView) findViewById(R.id.rescode);
         doIt.setEnabled(false);
         editText.clearFocus();
-       // new loadXML().execute(url);
+        new loadXML().execute(url);
 
     }
 
@@ -122,7 +124,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             InputStream fis = null;
             try {
                 fis = new FileInputStream(this.getFileStreamPath("currency.xml"));
-                currList = new XMLParser().parse(fis);
+                XmlPullParser par = Xml.newPullParser();
+                par.setInput(fis,null);
+                currList = new XMLParser().parse(par);
             } catch (XmlPullParserException | IOException e) {
                 e.printStackTrace();
             } finally {
@@ -174,8 +178,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             InputStream in = null;
             try {
                 in = downloadUrl(params[0]);
-
-                list = pars.parse(in);
+                XmlPullParser par = Xml.newPullParser();
+                par.setInput(in,null);
+                list = pars.parse(par);
             } catch (IOException | XmlPullParserException e) {
                 e.printStackTrace();
             } finally {
