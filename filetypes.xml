@@ -1,7 +1,8 @@
 <application>
-  <component name="FileTypeManager" version="16">
+  <component name="FileTypeManager" version="17">
     <extensionMap>
       <mapping pattern="ab_vid" type="Android Nine-Patch" />
+      <mapping pattern="Cookies" type="SQL" />
     </extensionMap>
   </component>
 </application>
